@@ -1,0 +1,290 @@
+
+
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensiklopedia Penyakit pada Tubuh Manusia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #4CAF50;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .read-more {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .read-more:hover {
+            background-color: #45a049;
+        }
+
+        .more-info {
+            display: none;
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        // Fungsi untuk toggle informasi tambahan
+        function toggleMoreInfo(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Ensiklopedia Penyakit pada Tubuh Manusia</h1>
+    <p>Informasi Lengkap, Penjelasan Detail, dan Penyuluhan Kesehatan</p>
+</header>
+
+<nav>
+    <a href="#penyakit-jantung">Penyakit Jantung</a>
+    <a href="#diabetes">Diabetes</a>
+    <a href="#kanker">Kanker</a>
+    <a href="#asma">Asma</a>
+    <a href="#obesitas">Obesitas</a>
+</nav>
+
+<div class="container">
+    <!-- Penyakit Jantung Section -->
+    <div id="penyakit-jantung" class="section">
+        <h2>Penyakit Jantung</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Penyakit Jantung Koroner</h3>
+                <p>Penyakit jantung koroner terjadi ketika aliran darah ke jantung berkurang akibat penyumbatan pada pembuluh darah.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more1')">Baca Selengkapnya</button>
+                <div id="more1" class="more-info">
+                    <p>Gejala termasuk nyeri dada, sesak napas, dan kelelahan. Penyebab utama adalah penumpukan plak di dinding arteri.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Gagal Jantung</h3>
+                <p>Gagal jantung adalah kondisi di mana otot jantung tidak dapat memompa darah secara efektif ke seluruh tubuh.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more2')">Baca Selengkapnya</button>
+                <div id="more2" class="more-info">
+                    <p>Penyebabnya meliputi hipertensi, serangan jantung sebelumnya, dan penyakit jantung koroner. Gejala meliputi sesak napas, kelelahan, dan pembengkakan di kaki.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Aritmia</h3>
+                <p>Aritmia adalah gangguan irama jantung yang menyebabkan detak jantung tidak normal, baik terlalu cepat atau terlalu lambat.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more3')">Baca Selengkapnya</button>
+                <div id="more3" class="more-info">
+                    <p>Penyebab bisa berupa penyakit jantung, ketidakseimbangan elektrolit, atau kondisi kesehatan lain. Gejala termasuk jantung berdebar-debar, pusing, atau pingsan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diabetes Section -->
+    <div id="diabetes" class="section">
+        <h2>Diabetes</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Diabetes Tipe 1</h3>
+                <p>Diabetes tipe 1 terjadi ketika tubuh tidak dapat memproduksi insulin yang cukup karena kerusakan pada sel-sel pankreas.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more4')">Baca Selengkapnya</button>
+                <div id="more4" class="more-info">
+                    <p>Pengobatan melibatkan suntikan insulin rutin dan pemantauan kadar gula darah secara berkala.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Diabetes Tipe 2</h3>
+                <p>Diabetes tipe 2 terjadi ketika tubuh tidak dapat menggunakan insulin dengan efektif, yang mengakibatkan kadar gula darah tinggi.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more5')">Baca Selengkapnya</button>
+                <div id="more5" class="more-info">
+                    <p>Faktor risiko meliputi obesitas, gaya hidup tidak aktif, dan faktor genetik. Pengelolaan meliputi perubahan gaya hidup dan obat-obatan.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Prediabetes</h3>
+                <p>Prediabetes adalah kondisi di mana kadar gula darah lebih tinggi dari normal, tetapi belum cukup tinggi untuk didiagnosis sebagai diabetes.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more6')">Baca Selengkapnya</button>
+                <div id="more6" class="more-info">
+                    <p>Jika tidak dikelola dengan baik, prediabetes bisa berkembang menjadi diabetes tipe 2. Pengelolaan meliputi perubahan gaya hidup sehat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kanker Section -->
+    <div id="kanker" class="section">
+        <h2>Kanker</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Kanker Paru-paru</h3>
+                <p>Kanker paru-paru adalah jenis kanker yang dimulai di sel-sel paru-paru dan sering disebabkan oleh merokok.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more7')">Baca Selengkapnya</button>
+                <div id="more7" class="more-info">
+                    <p>Gejala termasuk batuk kronis, nyeri dada, dan penurunan berat badan. Pengobatan meliputi operasi, kemoterapi, dan radioterapi.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Kanker Payudara</h3>
+                <p>Kanker payudara adalah jenis kanker yang berkembang di sel-sel payudara, biasanya pada duktus atau lobulus.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more8')">Baca Selengkapnya</button>
+                <div id="more8" class="more-info">
+                    <p>Pengobatan melibatkan operasi, terapi radiasi, kemoterapi, dan terapi hormon, tergantung pada stadium dan tipe kanker.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Kanker Kulit</h3>
+                <p>Kanker kulit terjadi ketika sel-sel kulit berkembang tidak normal, sering kali akibat paparan sinar UV.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more9')">Baca Selengkapnya</button>
+                <div id="more9" class="more-info">
+                    <p>Gejala termasuk perubahan pada kulit seperti munculnya bintik atau luka yang tidak sembuh-sembuh. Pencegahan meliputi penggunaan tabir surya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Asma Section -->
+    <div id="asma" class="section">
+        <h2>Asma</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Asma Bronkial</h3>
+                <p>Asma bronkial adalah kondisi kronis yang memengaruhi saluran udara, menyebabkan kesulitan bernapas.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more10')">Baca Selengkapnya</button>
+                <div id="more10" class="more-info">
+                    <p>Pemicu bisa berupa alergen, aktivitas fisik, atau infeksi pernapasan. Pengobatan melibatkan inhaler bronkodilator dan kortikosteroid.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Asma Alergi</h3>
+                <p>Asma alergi disebabkan oleh alergen seperti serbuk sari, bulu hewan peliharaan, atau debu rumah yang memicu peradangan saluran udara.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more11')">Baca Selengkapnya</button>
+                <div id="more11" class="more-info">
+                    <p>Gejala meliputi batuk, sesak napas, dan mengi. Pencegahan meliputi menghindari pemicu alergen dan menggunakan obat sesuai anjuran dokter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Obesitas Section -->
+    <div id="obesitas" class="section">
+        <h2>Obesitas</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Obesitas pada Dewasa</h3>
+                <p>Obesitas adalah kondisi di mana seseorang memiliki lemak tubuh berlebih yang dapat berdampak buruk bagi kesehatan.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more12')">Baca Selengkapnya</button>
+                <div id="more12" class="more-info">
+                    <p>Faktor risiko meliputi pola makan tidak sehat, kurang olahraga, dan faktor genetik. Pengelolaan mencakup perubahan gaya hidup dan penurunan berat badan.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Obesitas pada Anak</h3>
+                <p>Obesitas pada anak adalah masalah kesehatan serius yang memengaruhi anak-anak dengan kelebihan berat badan.</p>
+                <button class="read-more" onclick="toggleMoreInfo('more13')">Baca Selengkapnya</button>
+                <div id="more13" class="more-info">
+                    <p>Faktor risiko meliputi pola makan tinggi kalori dan kurangnya aktivitas fisik. Pencegahan meliputi pola makan sehat dan aktivitas fisik yang cukup.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Ensiklopedia Penyakit. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
